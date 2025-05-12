@@ -20,12 +20,18 @@ fun main(){
             }
         }
 
-    if (randomNumber == 1) {
-        computerChoice = "Rock"
-    } else if (randomNumber == 2) {
-        computerChoice = "Paper"
-    } else if (randomNumber == 3) {
-        computerChoice = "Scissors"
+//    if (randomNumber == 1) {
+//        computerChoice = "Rock"
+//    } else if (randomNumber == 2) {
+//        computerChoice = "Paper"
+//    } else if (randomNumber == 3) {
+//        computerChoice = "Scissors"
+//    }
+
+    when (randomNumber) {
+        1 -> computerChoice = "Rock"
+        2 -> computerChoice = "Paper"
+        3 -> computerChoice = "Scissors"
     }
 
     if (userChoice == computerChoice) {
